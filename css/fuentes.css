@@ -1,0 +1,40 @@
+p {
+    font-weight: 900;
+    font-family: 'Architects Daughter', cursive;
+}
+h1 {
+    font-style: italic;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-family: sans-serif;
+}
+p.fuente-net{
+font-family: 'Viaoda Libre' , sans-serif;
+}
+.fuente-net2 {
+    color: red;
+    font-size: 100px;
+font-family: 'Viaoda Libre' , sans-serif; 
+}
+span {
+    font-size: 1.8em;
+    color: red; 
+    font-weight: 900; 
+}
+
+/* viaoda-libre-regular - latin */
+@font-face {
+    font-family: 'Viaoda Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/viaoda-libre-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/viaoda-libre-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/viaoda-libre-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/viaoda-libre-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/viaoda-libre-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/viaoda-libre-v5-latin-regular.svg#ViaodaLibre') format('svg'); /* Legacy iOS */
+  }

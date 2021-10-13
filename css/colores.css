@@ -1,0 +1,17 @@
+/* Color llamado por su nombre... */
+p {
+    font-size: 2em;
+}
+.color-violeta {
+    color: violet; 
+}
+.color-azul {
+    color: rgb(0, 0, 255); 
+}
+.color-verde {
+    color: #00ff00;  
+
+}
+.color-coofisam {
+    color: rgb(211, 0, 21); 
+}
