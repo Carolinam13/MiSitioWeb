@@ -6,12 +6,9 @@ nav {
     width: 100%;
     position: fixed;
     top: 0;
-<<<<<<< HEAD
-=======
-    background-color: rgba(75, 190, 252, 0.528);
->>>>>>> dd8f29fc6741778393cf0e27de3e8c71804722ad
     padding: 25px;
     z-index: 5;
+    background-color: rgba(0, 255, 255, 0.322);
 }
 ul {
     text-align: right;
