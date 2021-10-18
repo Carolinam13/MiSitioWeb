@@ -1,63 +1,152 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
 }
-.main-content {
-    width: 80%;
+
+.main_content {
+    width: 90%;
+    max-width: 1300px;
     margin: 0 auto;
     display: grid;
     gap: 20px;
-    grid-template: "header        nav        nav"          100px
-                   "section       section    section"      350px
-                   "article-1     article-2  article-3"    auto
-                   "article-4     article-5  article-6"    auto /
-                   1fr            1fr        1fr;
+    grid-template: "header      nav         nav"          100px
+                   "section     section     section"      350px
+                   "article_1   article_2   article_3"    auto
+                   "article_4   article_5   article_6"    auto /
+                    1fr          1fr         1fr;
 }
+
 header {
-background: coral;
-grid-area: header;
+    background: coral;
+    grid-area: header;
+    margin-top: 30px;
 }
-header, nav, section, .img-article {
-    display: flex;
-    border-radius: 20px;
+
+header, nav, section, .img_article {
+
+    border-radius: 12px;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.8em;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
+    display: flex;
+
+
 }
+
 nav {
-    background: cyan;
+    background: rgb(238, 27, 27);
     grid-area: nav;
-    margin-top: ;
+    margin-top: 30px;
 }
+
 section {
-    background: darkcyan ;
+    background: darkcyan;
     grid-area: section;
 }
 
-.article-1 {
-grid-area: article-1;
-}
-.article-2 {
-    grid-area: article-2;  
+article {
+    max-width: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.article-3 {
-    grid-area: article-3;
+article .article_1 {
+
+    grid-area: article_1
 }
-.article-4 {
-    grid-area: article-4;
+
+article .article_2 {
+
+    grid-area: article_2
+    
 }
-.article-5 {
-    grid-area: article-5;
+
+article .article_3 {
+
+    grid-area: article_3
+    
 }
-.article-6 {
-    grid-area: article-6;
+
+article .article_4 {
+
+    grid-area: article_4
+    
 }
-.img-article {
-    width: 300px;
-    height: 250px;
-    margin: 200px;
-    background: burlywood;
-.header-class
+
+article .article_5 {
+
+    grid-area: article_5
+    
+}
+
+article .article_6 {
+    grid-area: article_6
+    
+}
+
+.img_article {
+
+    width: 100% ;
+    height: 250px ;
+    background: rgb(104, 240, 13);
+    margin: 20px 20px 20px 0;
+}
+
+.titulo_article {
+    margin: 10px;
+}
+
+.font_article {
+
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: justify;
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    
+    .main_content {
+        width: 92%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        gap: 20px;
+        grid-template: "header      nav"                      100px
+                       "section     section"                  350px
+                       "article_1   article_2"                auto
+                       "article_3   article_4"                auto
+                       "article_5   article_6"                auto  /
+                        1fr          1fr;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+    
+    .main_content {
+        width: 95%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        gap: 10px;
+        grid-template: "header"                               100px
+                       "nav"                                  100px
+                       "section"                              100px
+                       "article_1"                            auto
+                       "article_2"                            auto
+                       "article_3"                            auto
+                       "article_4"                            auto
+                       "article_5"                            auto
+                       "article_6"                            auto  /
+                        1fr;
+    }
+
+    article {
+        max-width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
