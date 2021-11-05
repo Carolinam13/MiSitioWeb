@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap_elementos.css">
+</head>
+<body>
+<h1>Hello, wordl!</h1>
+
+<h2>Contenedores en Bootstrap</h2>
+<div class="box-1 container" >
+    Este es un contenedor en bootstrap con class container
+</div>
+<div class="box-1 container-sm" >
+    Este es un contenedor en bootstrap con class container-sm
+</div>
+<div class="box-1 container-md" >
+    Este es un contenedor en bootstrap con class container-md
+</div>
+<div class="box-1 container-lg" >
+    Este es un contenedor en bootstrap con class container-lg
+</div>
+<div class="box-1 container-xl" >
+    Este es un contenedor en bootstrap con class container-xl
+</div>
+<div class="box-1 container-xxl" >
+    Este es un contenedor en bootstrap con class container-xxl
+</div>
+<div class="box-1 container-fluid" >
+    Este es un contenedor en bootstrap con class container-fluid
+</div>
+
+<h2>Grillas</h2>
+<div class="grillas container-fluid">
+    <div class="row">
+        <div class="col-8">
+            Column 1
+        </div>
+        <div class="col-2">
+            Column 2
+        </div>
+        <div class="col-2">
+            Column 3
+        </div>   
+    </div>
+</div>
+
+<h2>Columnas</h2>
+<div class="container">
+    <div class="row style-row">
+        <div class="col-3 style-col">Columna 1</div>
+        <div class="col-1 style-col">Columna 2</div>
+        <div class="col-5 style-col">Columna 3</div>
+        <div class="col-1 style-col">Columna 4</div>
+        <div class="col-3 style-col">Columna 5</div>
+        <div class="col-1 style-col">Columna 6</div>
+        <div class="col-6 style-col">Columna 7</div>
+        <div class="col-1 style-col">Columna 8</div>
+        <div class="col-4 style-col">Columna 9</div>
+        <div class="col-12 style-col">Columna 10</div>
+        <div class="col-1 style-col">Columna 11</div>
+        <div class="col-8 style-col">Columna 12</div>      
+    </div>
+</div>
+
+<h2>Basic Form</h2>
+<div class="container">
+<div class="row style-row">
+    <div class="col-3"></div>
+</div>
+</div>
+
+    <h2>Alert</h2>
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+
+
+
+<h2>Buttons</h2>
+<div class="container style-row"></div>
+<div class="row"></div>
+<button type="button" class="btn btn-primary position-relative">
+    Mensaje Principal
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      10
+      <span class="visually-hidden">unread messages</span>
+    </span>
+  </button>
+ 
+
+  <h2>Cards</h2>
+  
+
+  <!--  -->
+  <!-- popover -->
+  <!--  -->
+  <h2>Popover</h2>
+  <div class="container">
+  <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="Tarjeta de crédito">Ver formas de pago</button>
+</div>
+
+  <!--  -->
+  <!-- Toast -->
+  <!--  -->
+<h2>Toast</h2>
+<div class="container">
+
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Ver notificación</button>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="img/factura1.jpg" class="rounded me-2" alt="...">
+          <strong class="me-auto">Facturas</strong>
+          <small>Hace 10 minutos</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          La factura se ha generado automáticamente
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--  -->
+  <!-- Tooltip -->
+  <!--  -->
+  <h2>Tooltip</h2>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Pago Seguro">
+    Confirmar pago
+  </button>
+
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap_elementos.js"></script>
+</body>
+</html>

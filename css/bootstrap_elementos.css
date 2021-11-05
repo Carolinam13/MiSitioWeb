@@ -1,0 +1,33 @@
+.box-1 {
+    background:rgba(0, 153, 255, 0.801);
+color: rgb(0, 0, 0);
+height: 90px;
+font-size: 1.5em;
+margin-bottom: .4em;
+font-style: italic;
+}
+h2 {
+    margin-left: 50px;
+}
+.grillas {
+    margin-bottom: 30px;
+}
+.style-col {
+    border: 1px solid rgb(0, 238, 255);
+    height: 55px;
+}
+.style-row {
+margin-bottom: 50px;
+}
+.space-buttons {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 1.3em;
+}
+.space-cards {
+    margin: 20px;
+    padding: 20px;
+}
+.black-font {
+    color: black;
+}
