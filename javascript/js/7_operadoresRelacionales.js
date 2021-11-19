@@ -1,7 +1,8 @@
 "use strict"
 
-console.log("Mayor que...................>")
-console.log("Menor que...................<")
-console.log("Mayor o igual que ...............")
-console.log("")
-console.log("")
+console.log("Mayor que.....................>")
+console.log("Menor que.....................<")
+console.log("Mayor o igual que ............>=")
+console.log("Menor o igual que ............<=")
+console.log("Igual que.....................==")
+console.log("Estrictamente igual...........===")
