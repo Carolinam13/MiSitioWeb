@@ -4,6 +4,7 @@ p {
 }
 h1 {
     font-style: italic;
+    margin-top: -2px;
 }
 h2 {
     font-size: 40px;
