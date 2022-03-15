@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <script src="js/carritodeCompras.js"></script>
+    <link rel="stylesheet" href="css/carritodeCompras.css">
+</head>
+<body>
+
+    <div class="conten1">
+        <div class="contenedor">
+            <h2> Subtotal Cop<label class="subTotal" id="multiplicar">0</label ></h2>
+        </div>
+        <div class="conten2">
+            <label class="cantProductos">Proceder al pago de (<span class="num" id="igual">0</span> productos)</label>
+        </div>
+        <div class="conten3">
+            <p class="text">Portátil HP Intel Core<br> ¡5, RAM 8 GB, 256 GB <br> SSD, 14-CF2524LA <br> <br> 14" HD, plateado <br> <br> Cop 2,450,999<br><br>  Panamericana </p>
+            
+        </div>
+        <div class="cont4">
+            <a href="#" class="botEliminar">Eliminar</a>
+        </div>
+        
+        <div class="img">
+            <img src="img/compuuu.png" alt="#">
+        </div>
+    
+        <div class="botones" >
+            <a href="#" class="sumRest" id="disminuir" onclick="disminuirUnidades();">-</a>
+            <input class="valor" type="button"  id="cantidad" value="0"  >
+            <a href="#" class="sumRest" id="aumentar" onclick="aumentarUnidades();">+</a>
+        </div>
+    </div>
+
+    
+    </body>
+    </html>

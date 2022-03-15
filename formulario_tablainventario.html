@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <script src="js/formulario_tablainventario.js"></script>
+    <link rel="stylesheet" href="css/formulario_tablainventario.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div class="contenedor">
+                <h1 >Registro de productos</h1>
+
+                <div>
+                <label class="code">código del</label>
+                <div><label class="code">producto</label>
+                </div>
+                <div class="cod1"><input type="text" class="codigo" id="codigo">
+                </div>
+
+                <div>
+                <label class="code" > Descripción</label>
+                <input type="text" class="descripcion" id="descripcion">
+                </div>
+
+                <div>
+                <label class="code" >Valor unitario</label>
+                <input type="text" class="valoruni" id="valor">
+                <label class="code" >Unidades en stock</label>
+                <input type="text" class="unistock" id="unidadesStock">
+                </div>
+
+                <input class="contcargarproduct"type="button" value="Cargar producto" onclick="cargarProducto()">
+
+                <div id="table.js"> </div>
+
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>

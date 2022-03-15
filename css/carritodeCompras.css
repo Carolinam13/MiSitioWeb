@@ -1,0 +1,109 @@
+.conten1 {
+    border: 2px solid rgba(228, 209, 209, 0.582);
+
+    max-width: 1000px;
+    width: 650px;
+    margin-top: 5%;
+    margin-left: 20px;
+    top: 90%;
+    margin-right: 25%;
+    border-radius: 30px;
+
+}
+
+.contenedor {
+    margin-left: 20px;
+}
+
+.conten2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid rgba(127, 246, 255, 0.815);
+    height: 40px;
+border-radius: 8px;
+
+    background-color: rgba(127, 246, 255, 0.815);
+}
+
+.conten3 {
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 40px;
+}
+
+.subTotal{
+   
+    font-size: 27px;
+    margin-left: 10px;
+}
+
+.cantProductos {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 24%;
+    font-style: italic;
+    font-weight: 10px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.num{
+    font-size: 25px;
+}
+
+.cont4{
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 320px;
+}
+
+.botEliminar{
+    text-decoration: none;
+    border-radius: 3px;
+    color: black;
+    background-color:rgb(230, 228, 228);
+    padding: 8px 40px;
+    font-size:23px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-left: 45px;
+}
+
+.botEliminar:hover {
+    background-color: rgb(238, 37, 37);
+}
+
+.img{
+    margin-top: 60px;
+    margin-left: 18px;
+}
+
+.botones {
+margin-top: 10px;
+margin-left: 40px;
+margin-right: 446px;
+margin-bottom: 50px;
+}
+
+.sumRest {
+    background-color: rgba(167, 223, 240, 0.363);
+    text-decoration: none;
+    padding: 4px 18px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;  
+}
+
+.valor {
+    background-color: rgba(167, 223, 240, 0.301);
+    text-decoration: none;
+    padding: 4px 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    
+}

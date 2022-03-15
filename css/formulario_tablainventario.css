@@ -1,0 +1,86 @@
+fieldset {
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+h1 {
+    text-align: center;
+    font-style: italic;
+    color: rgb(0, 132, 255);
+}
+
+.code {
+    margin-top: 30px;
+    padding: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.codigo {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 35%;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 185, 185);
+}
+.cod1 {
+    margin-top: -55px;
+    margin-left: 150px;
+    width: 40%;
+}
+.descripcion {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 55%;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 185, 185);
+}
+.valoruni {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left: 4px;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 185, 185);
+}
+.unistock {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left:10px;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 185, 185);
+}
+
+.contcargarproduct {
+background-color: rgba(0, 255, 255, 0.616);
+padding: 10px;
+margin-bottom: 40px;
+margin-top: 15px;
+margin-left: 130px;
+text-align: center;
+width: 70%;
+border-radius: 5px;
+border: 1px solid rgb(206, 185, 185); 
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 100%;
+}
+
+.table-style {
+    display: block;
+    margin: 30px auto;
+    width: 60%;
+    padding: 7px;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid rgba(141, 138, 138, 0.61);
+    padding: 15px;
+    width: 100px;
+}
