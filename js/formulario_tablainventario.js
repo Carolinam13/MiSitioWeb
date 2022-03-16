@@ -82,12 +82,43 @@ function cargarInfoTabla(codigo, descripcion,valor, unidad) {
     let nodoUnidadTD = document.createElement("td");
     nodoProducto.appendChild(nodoUnidadTD);
     nodoUnidadTD.appendChild(unidad);
+
+
+    limpiarformulario();
+
 }
+
+function limpiarformulario(){
+document.getElementById("codigo").value= "";
+document.getElementById("descripcion").value= "";
+document.getElementById("valor").value= "";
+document.getElementById("unidadesStock").value= "";
+}
+
 
 function validarFormulario(){
     let inputCodigo = document.getElementById("codigo").value.trim();
     if(inputCodigo ==""){
-    alert("Por favor ingrese el código del producto");
+    alert("Por favor ingrese el código del producto").focus();
+    }
+
+
+    let inputDescripcion = document.getElementById("descripcion").value.trim();
+    if(inputDescripcion ==""){
+    alert("Por favor ingrese la descripción del producto").focus();
+ 
+}
+
+    let inputValor = document.getElementById("valor").value.trim();
+    if(inputValor ==""){
+    alert("Por favor ingrese el valor unitario del producto").focus();
+
+  
+}
+
+    let inputunidadesStock = document.getElementById("unidadesStock").value.trim();
+    if(inputunidadesStock ==""){
+    alert("Por favor ingrese las unidades en stock del producto").focus();
 
     return false; 
 }
