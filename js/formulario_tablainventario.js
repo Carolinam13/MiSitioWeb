@@ -10,7 +10,7 @@ function crearEncabezado() {
 
     let nodoEncabezado1 = document.createElement("th");
     nodoFilaEncabezado.appendChild(nodoEncabezado1);
-    let codigoHeading1 = document.createTextNode("Código");
+    let codigoHeading1 = document.createTextNode("Código del producto");
     nodoEncabezado1.appendChild(codigoHeading1)
 
     let nodoEncabezado2 = document.createElement("th");
