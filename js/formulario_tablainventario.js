@@ -41,6 +41,7 @@ function validarTabla() {
         alert("Elemento añadido a la tabla correctamente")
     }
 
+    
 }
 function cargarProducto() {
     if (validarFormulario()){
