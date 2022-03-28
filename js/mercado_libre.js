@@ -13,7 +13,7 @@ function validarPorsche () {
 
     
   mostrarVehiculo();
-}
+  
 function mostrarVehiculo() {
     let contentPrincipal = document.getElementById("main_content");
     let contentAuto      = document.createElement("div");
@@ -42,7 +42,7 @@ function mostrarVehiculo() {
 let toyota = new Automovil ("Toyota", "Prado", "$ 219.800.000", "imagenes/toyota_prado.jpg");
 
 function validarToyota () {
-    alert (toyota.Marca + " " + toyota.Modelo + " " + "El auto perfecto para salir de paseo con tu familia o amigos¡¡")
+    alert (toyota.Marca + " " + toyota.Modelo + " " + "El auto perfecto")
 
     mostrarToyota ();
 }
@@ -73,7 +73,7 @@ function mostrarToyota () {
 }
  let chevrolet = new Automovil ("Chevrolet", "Camaro", "$ 274000000", "imagenes/chevrolet_camaro.jpg");
  function validarChevrolet() {
-     alert (chevrolet.Marca + " " + chevrolet.Modelo + " " + "El auto mas eficaz en la carretera¡¡")
+     alert (chevrolet.Marca + " " + chevrolet.Modelo + " " + "El auto mas eficaz")
 
      mostarChevrolet();
  }
