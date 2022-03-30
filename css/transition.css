@@ -56,3 +56,40 @@
     clip-path: circle(60% at center);
     margin-bottom: 30px;
 }
+
+.container_7 {
+    width: 100px;
+    height: 100px;
+    background: rgb(28, 245, 245);
+    transition: width 2s, height 4s;
+  }
+  
+.container_7:hover {
+    width: 300px;
+    height: 300px;
+  }
+
+.container_8 {
+    width: 100px;
+    height: 100px;
+    background: rgba(59, 112, 224, 0.979);
+    transition: width 3s;
+    transition-delay: 1s;
+  }
+  
+.container_8:hover {
+    width: 300px;
+  }
+
+.container_9 {
+    width: 100px;
+    height: 100px;
+    background: rgba(139, 125, 125, 0.418);
+    transition: width 2s, height 2s, transform 2s;
+  }
+  
+.container_9:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+  }
