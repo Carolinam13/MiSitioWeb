@@ -1,0 +1,37 @@
+.encabezado {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template:     "avion    ayuda    "
+
+
+}
+.avion {
+    grid-area: avion;
+}
+
+.style-contentVuelo {
+    display: grid;
+    grid-template: "styleOrigen  styelOrigen       styleDestino" 25px
+                   "stylePrecio  styleDirecto      empty"        25px/
+                    1fr           1fr              1fr; 
+    margin-bottom: 50px;
+}
+.styleOrigen {
+    grid-area: styleOrigen;
+    font-size: 1.5em;
+}
+.styleDestino {
+    grid-area: styleDestino;
+    font-size: 1.5em;
+    text-align: right;
+}
+.stylePrecio {
+    grid-area: stylePrecio;
+    font-size: 1.5em;
+}
+.styleDirecto {
+    grid-area: styleDirecto;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
