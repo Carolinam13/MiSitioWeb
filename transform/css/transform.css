@@ -1,0 +1,55 @@
+.transform1 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(50, 169, 190);
+    transition: transform 5s;
+    
+}
+
+.transform1:hover {
+    transform:  translate(0px, 200px);
+}
+
+.transform2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(50, 169, 205);
+    transition: transform 2s;
+}
+.transform2:hover {
+    transform: scale(5,2);
+    cursor: pointer;
+}
+
+.transform3 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 183, 255);
+    transition: width 1s, height 1s, transform 1s;
+    /* border-radius: 50px; */
+}
+.transform3:hover{
+transition: width 1s, height 1s, transform 1s;
+transform: translate(1% -1%);
+width: 150px;
+height: 150px;
+}
+
+.transform4 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 102, 255, 0.705);
+    transition: width 600ms, height 600ms;
+}
+
+.transform4:hover {
+    transition: width 1s, height 1s, transform 1s;
+    transform: scale(5,5);
+    transform-origin: bottom right;
+    width: 80px;
+    height: 80px;
+}
+
