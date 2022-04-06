@@ -1,12 +1,75 @@
+.viaje {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+    outline: none;
+    margin-left: 50px;
+}
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+.contenedor {
+    margin-left: 100px;
+    display: inline-block;
+}
+.boton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 85%;
+    border: 1px solid rgba(167, 159, 159, 0.671);
+    border-radius: 12px;
+    font-size: 18px;
+    font-style: oblique;
+    color: rgb(255, 253, 253);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(4, 12, 11);
+    padding: 10px;
+}
+.boton:hover{
+    background-color: rgb(68, 71, 71);
+    transition: .5s;
+    translate: 3px;
+}
+
 .encabezado {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template:     "avion    ayuda    "
+    grid-template:     "avion    ayuda    telefono   menuu" /
+                        1fr      200px    150px      150px;
 
-
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(182, 8, 8);
+    padding: 3px;
 }
-.avion {
+.fas{
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fa {
+font-size: 30px;
+    
+    
+}
+.aircraft-take-off {
     grid-area: avion;
+    padding: 15px;
+}
+.help {
+    grid-area: ayuda;
+}
+.phone {
+    grid-area: telefono;
+}
+.menu {
+    grid-area: menuu;
 }
 
 .style-contentVuelo {
@@ -15,19 +78,28 @@
                    "stylePrecio  styleDirecto      empty"        25px/
                     1fr           1fr              1fr; 
     margin-bottom: 50px;
+    border: 1px solid rgba(110, 101, 101, 0.808);
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .styleOrigen {
     grid-area: styleOrigen;
     font-size: 1.5em;
+    margin-left: 10px;
 }
 .styleDestino {
     grid-area: styleDestino;
     font-size: 1.5em;
     text-align: right;
+    margin-right: 10px;
 }
 .stylePrecio {
     grid-area: stylePrecio;
     font-size: 1.5em;
+    margin-left: 10px;
 }
 .styleDirecto {
     grid-area: styleDirecto;

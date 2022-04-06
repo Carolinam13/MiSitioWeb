@@ -14,11 +14,26 @@
 <body>
 
     <div class="encabezado" >
-    <i class="icon-aircraft-take-off"></i> Avianca <i class="icon-phone"></i><i class="icon-help"></i><i class="icon-menu"></i>
+        <a href="#"><i class="fas fa icon-aircraft-take-off"> Avianca</i></a>
+        <a class="fas icon-help" href=""><br> Ayuda</a>
+        <a class="fas icon-phone" href=""> <br> Contactanos</a>
+        <a class="fas icon-menu" href="#"> <br> Menú</a>
+    </div>
+ 
+    <div class="contenedor">
+        <h2>¿A donde Viajas?</h2>
+        <input class="viaje" type="label" placeholder="Desde">
+        <input class="viaje" type="label" placeholder="Hacia">
+    </div>
+    <div class="contenedor">
+        <h2>Fecha del viaje</h2>
+        <input class="viaje" type="label" placeholder="Salida">
+        <input class="viaje" type="label" placeholder="LLegada">
     </div>
 
+
     <div id="main_content">
-    <input type="button" value="Mostrar Vuelos"  onclick="mostrarVuelos();">
+    <input class="boton" type="button" value="Mostrar Vuelos"  onclick="mostrarVuelos();">
     </div>
 
     <script src="js/cotizacionvuelos.js"></script>
