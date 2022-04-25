@@ -74,8 +74,8 @@ font-size: 30px;
 
 .style-contentVuelo {
     display: grid;
-    grid-template: "styleOrigen      empty              styleDestino"                  50px
-                   "styleHoraSalida  styleDirecto       styleHoraLlegada  stylePrecio" 30px/       
+    grid-template: "styleOrigen      styleDirecto       styleDestino    stylePrecio"                  50px
+                   "empty           styleHoraSalida  styleDirecto       styleHoraLlegada  " 30px/       
                     1fr              1fr                 1fr              1fr; 
     margin-bottom: 50px;
     border: 1px solid rgba(110, 101, 101, 0.808);
@@ -102,7 +102,8 @@ font-size: 30px;
     font-size: 1.5em;
     margin-top: 14px;
     margin-left: 85%;
-   /*  border-left: 1px solid rgb(46, 41, 41); */
+    padding: 10px;
+    border-left: 1px solid rgb(46, 41, 41);
 }
 .styleDirecto {
     grid-area: styleDirecto;
