@@ -1,21 +1,20 @@
 class Automovil {
-    constructor (marca, modelo, anyo, imagen) {
+    constructor (marca, modelo, precio, imagen) {
         this.marca = marca ;
         this.modelo = modelo;
-        this.anyo = anyo;
+        this.precio = precio;
         this.imagen = imagen;
     }
 }
-let auto = new Automovil ("Porsche", "Touring", 2022, "img/porsche.png");
+let auto = new Automovil ("BMW", "TM235i xDrive", "$ 150000000", "img/bmw.png");
 
-function validarPorsche () {
-    alert(auto.marca + " " + auto.modelo + " "  + auto.anyo + " " +  "El automovil que necesitas");}
-
+function validarBmw () {
+    alert(auto.marca + "" + auto.modelo + ""  + "" + auto.precio + "" + auto.imagen + "El automovil que necesitas");
     
-  mostrarVehiculo();
-  
-function mostrarVehiculo() {
-    let contentPrincipal = document.getElementById("main_content");
+    mostrarBmw();
+}
+function mostrarBmw() {
+    let contentPrincipal = document.getElementById("carros");
     let contentAuto      = document.createElement("div");
     contentPrincipal.appendChild(contentAuto);
 
@@ -39,46 +38,49 @@ function mostrarVehiculo() {
     imagenAuto.setAttribute("src", auto.Imagen);
 }
 
-let toyota = new Automovil ("Toyota", "Prado", "$ 219.800.000", "imagenes/toyota_prado.jpg");
 
-function validarToyota () {
-    alert (toyota.Marca + " " + toyota.Modelo + " " + "El auto perfecto")
+let fordMustang = new Automovil ("Ford Mustang", "Clásico", "$ 98.800.000", "img/ford mustang.png.jpg");
 
-    mostrarToyota ();
+function validarMustang () {
+    alert (fordMustang.Marca + " " + fordMustang.Modelo + " " + fordMustang.Precio + "" + fordMustang.Imagen + " El auto perfecto para salir de aventura y presumirlo con tus amigos")
+
+    mostrarMustang ();
 }
 
-function mostrarToyota () {
-    let contenedorPrinToyota = document.getElementById("main_content");
-    let contentToyota        = document.createElement("div");
-    contenedorPrinToyota.appendChild(contentToyota);
+function mostrarMustang () {
+    let contenedorPrinfordMustang = document.getElementById("main_content");
+    let contentfordMustang        = document.createElement("div");
+    contenedorPrinfordMustang.appendChild(contentfordMustang);
 
-    let marcaToyota = document.createElement("label");
-    contentToyota.appendChild(marcaToyota);
-    let textToyotaMarca = document.createTextNode(toyota.Marca);
-    marcaToyota.appendChild(textToyotaMarca);
+    let marcafordMustang = document.createElement("label");
+    contentfordMustang.appendChild(marcafordMustang);
+    let textfordMustangMarca = document.createTextNode(fordMustang.Marca);
+    marcafordMustang.appendChild(textfordMustangMarca);
 
-    let modeloToyota = document.createElement("label");
-    contentToyota.appendChild(modeloToyota);
-    let textModelToyota = document.createTextNode(toyota.Modelo);
-    modeloToyota.appendChild(textModelToyota);
+    let modelofordMustang = document.createElement("label");
+    contentfordMustang.appendChild(modelofordMustang);
+    let textModelfordMustang = document.createTextNode(fordMustang.Modelo);
+    modelofordMustang.appendChild(textModelfordMustang);
 
-    let precioToyota = document.createElement("label");
-    contentToyota.appendChild(precioToyota);
-    let textPrecioToyota = document.createTextNode(toyota.Precio);
-    precioToyota.appendChild(textPrecioToyota);
+    let preciofordMustang = document.createElement("label");
+    contentfordMustang.appendChild(preciofordMustang);
+    let textPreciofordMustang = document.createTextNode(fordMustang.Precio);
+    preciofordMustang.appendChild(textPreciofordMustang);
 
-    let imgToyota = document.createElement("img");
-    contentToyota.appendChild(imgToyota);
-    imgToyota.setAttribute("src", toyota.Imagen)
+    let imgfordMustang = document.createElement("img");
+    contentfordMustang.appendChild(imgfordMustang);
+    imgfordMustang.setAttribute("src", fordMustang.Imagen)
 }
- let chevrolet = new Automovil ("Chevrolet", "Camaro", "$ 274000000", "imagenes/chevrolet_camaro.jpg");
+
+
+ let chevrolet = new Automovil ("Chevrolet", "Trailblazer", "$ 178000000", "img/chevrolet.png");
  function validarChevrolet() {
-     alert (chevrolet.Marca + " " + chevrolet.Modelo + " " + "El auto mas eficaz")
+     alert (chevrolet.Marca + " " + chevrolet.Modelo + " " + chevrolet.Precio + "" + chevrolet.Imagen + "El auto perfecto para un recorrido a larga distancia")
 
-     mostarChevrolet();
+     mostrarChevrolet();
  }
 
-function mostarChevrolet () {
+function mostrarChevrolet () {
     let contenedorPrincChevrolet = document.getElementById("main_content");
     let contnedorChevrolet = document.createElement("div");
     contenedorPrincChevrolet.appendChild(contnedorChevrolet);
@@ -107,30 +109,30 @@ window.addEventListener("keydown", function(event) {
     let busqueda = document.getElementById("textoBusqueda").value;
     if (event.key == "Enter") {
         limpiarVentana();
-        if (busqueda == "Automoviles Disponibles" ) {
-            mostrarVehiculo(auto);
-            mostrarToyota(toyota);
-            mostarChevrolet(chevrolet);
+        if (busqueda == "Automoviles" ) {
+            mostrarBmw(auto);
+            mostrarMustang(fordMustang);
+            mostrarChevrolet(chevrolet);
         }
-        else if (busqueda == "Mazda 3" ) {
+        else if (busqueda == "BMW" ) {
             mostrarVehiculo(auto);}
         
 
-        if (busqueda == "Toyota Prado") {
-            mostrarToyota(toyota);}
+        if (busqueda == "Ford Mustang") {
+            mostrarMustang(fordMustang);}
 
-        else if (busqueda == "Chevrolet Camaro") {
-            mostarChevrolet(chevrolet);
+        else if (busqueda == "Chevrolet Trailblazer") {
+            mostrarChevrolet(chevrolet);
         }
             
         else {
               this.true;
         } 
-        return this. false.alert("no se han encontrado resultados."); 
+        return this. false.alert("No se han encontrado resultados, por favor intente buscar otro articulo."); 
     }
 })
 
 
 function limpiarVentana () {
-    document.getElementById("main_content").innerHTML = "" ;
-} 
+    document.getElementById("carros").innerHTML = "" ;
+}

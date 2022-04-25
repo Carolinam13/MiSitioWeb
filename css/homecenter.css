@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.encabezado {
+    display: grid;
+    background-color: white;
+    border-bottom: 1px solid rgb(136, 133, 128);
+    height: 90px;
+    grid-template:  "logo    lupa"/
+                     1fr     1fr  ;
+    
+}
+.logo{
+    grid-area: logo;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.magnifying-glass {
+    grid-area: lupa;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.fas{
+    color: rgb(12, 12, 12);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-image: url("../img/homecenter1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.transform1 {
+    border: 1px solid black;
+    
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    width: 0px;
+    height: 0px;
+    transition: transform 20ms, width 600ms, height 600ms;
+    }
+    
+.transform2{
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    
+    transition: width  700ms,  height  700ms;
+    width: 300px;
+    height: 400px;
+}
+    
+.botonCerrar {
+    display: none;
+    grid-area: boton;   
+}
+
+.botonCerrarVisible {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(42, 228, 228);
+    border-radius: top 15px;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;  
+}
+
+.botonForm{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 15px;
+}
+.caro{
+   border: 1px solid white;
+   background-color: none;
+   
+    
+   font-size: 20px; 
+   width: 80px;
+   background-color: white;
+   color: rgb(75, 125, 170);
+   cursor: pointer;
+}
+.div2{
+    border: 1px solid rgb(215, 215, 215);
+    margin: auto 5px;
+}
+.styleDescrip{
+    text-align: justify;
+    padding: auto;
+    display: 1px;
+ }
+.contenx{
+    background-color: rgb(42, 228, 228);
+    
+    display: grid;
+    grid-template: "menuu   img    boton" /
+                     1fr   1fr    1fr;
+                     
+    width: 100%;
+    
+}

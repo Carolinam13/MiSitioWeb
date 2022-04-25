@@ -1,9 +1,18 @@
 "use strict"
+
+let horaSalida = new Date(2022, 6, 5, 6, 10, 0);
+let horaLlegada = new Date(2022, 6, 5, 11, 10, 0);
+
+let horaSalida2 = new Date(2022, 6, 22, 6, 55, 0);
+let horaLlegada2 = new Date(2022, 6, 22, 11, 55, 0);
+
 class Vuelos {
-    constructor (origen, destino, precio) {
+    constructor (origen, destino, precio, horaSalida, horaLlegada) {
         this.origen = origen ;
         this.destino = destino;
         this.precio = precio;
+        this.horaSalida = horaSalida;
+        this.horaLlegada = horaLlegada;
     }
 }
 
@@ -11,20 +20,24 @@ let vuelo = [{
     "origen": "Bogota",
     "destino": "San Andres",
     "precio": 500000,
+    "horaSalida": horaSalida.getHours() + ":" + horaSalida.getMinutes(),
+    "horaLlegada": horaLlegada.getHours() + ":" + horaLlegada.getMinutes(),
 },
 {
     "origen": "Bogota",
-    "destino": "Cundinamarca",
+    "destino": "San Andres",
     "precio": 480000,
+    "horaSalida": horaSalida2.getHours() + ":" + horaSalida2.getMinutes(),
+    "horaLlegada": horaLlegada2.getHours() + ":" + horaLlegada2.getMinutes(),
 }];
 
 function mostrarVuelos() {
     for (let i = 0; i < vuelo.length; i++) {
-    cargarVuelos(vuelo[i].origen, vuelo[i].destino, vuelo[i].precio,);
+    cargarVuelos(vuelo[i].origen, vuelo[i].destino, vuelo[i].precio, vuelo[i].horaSalida, vuelo[i].horaLlegada);
 }
 }
 
-function cargarVuelos(origen,destino, precio){
+function cargarVuelos(origen,destino, precio, horaSalida, horaLlegada){
   let contentVuelo = document.createElement("div");
   let contentPrincipal = document.getElementById("main_content");
   contentPrincipal.appendChild(contentVuelo);
@@ -56,4 +69,17 @@ function cargarVuelos(origen,destino, precio){
   let textDirect = document.createTextNode("Directo");
   directVuelo.appendChild(textDirect);
   directVuelo.setAttribute("class", "styleDirecto");
+
+  let horaSalidaVuelo = document.createElement("label");
+  contentVuelo.appendChild(horaSalidaVuelo);
+  let textHoraSalida = document.createTextNode(horaSalida);
+  horaSalidaVuelo.appendChild(textHoraSalida);
+  horaSalidaVuelo.setAttribute("class", "styleHoraSalida");
+
+  let horaLlegadaVuelo = document.createElement("label");
+  contentVuelo.appendChild(horaLlegadaVuelo);
+  let textHoraLlegada = document.createTextNode(horaLlegada);
+  horaLlegadaVuelo.appendChild(textHoraLlegada);
+  horaLlegadaVuelo.setAttribute("class", "styleHoraLlegada");
+
 }
