@@ -31,7 +31,6 @@ h2 {
 .boton:hover{
     background-color: rgb(68, 71, 71);
     transition: .5s;
-    translate: 3px;
 }
 
 .encabezado {
@@ -74,22 +73,21 @@ font-size: 30px;
 
 .style-contentVuelo {
     display: grid;
-    grid-template: "styleOrigen      styleDirecto       styleDestino    stylePrecio"                  50px
-                   "empty           styleHoraSalida  styleDirecto       styleHoraLlegada  " 30px/       
+    grid-template: "styleOrigen      styleDirecto       styleDestino      stylePrecio"  25px
+                   "empty             styleDirecto       empty            stylePrecio " 25px/       
                     1fr              1fr                 1fr              1fr; 
     margin-bottom: 50px;
     border: 1px solid rgba(110, 101, 101, 0.808);
     border-radius: 10px;
     padding: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 80%;
+    margin-left: 8%;
 }
 
 .styleOrigen {
     grid-area: styleOrigen;
     font-size: 1.8em;
-    margin-left: -80%;
-    margin-top: -10px;
+   
 }
 .styleDestino {
     grid-area: styleDestino;
@@ -112,16 +110,14 @@ font-size: 30px;
     margin-left: -10%;
 }
 .styleHoraSalida {
-    grid-area: styleHoraSalida;
+    
     font-size: 1.5em;
-    display: grid;
     margin-top: 25px;
-    margin-left: -78%;
+    
 }
 .styleHoraLlegada {
-    grid-area: styleHoraLlegada;
+    
     font-size: 1.5em;
-    display: grid;
-    margin-top: 25px;
-    margin-left: 45%;
+    /* margin-top: 25px;
+    margin-left: 45%; */
 }

@@ -20,7 +20,7 @@ function mostrarForm() {
     contenedor.setAttribute("class", "div2");
     let desc = document.createElement("label");
     div2.appendChild(desc);
-    let text = document.createTextNode("Hola, soy Carolina, tu asistente virtual.");
+    let text = document.createTextNode();
     desc.appendChild(text);
     desc.setAttribute("class", "styleDescrip");
 }
