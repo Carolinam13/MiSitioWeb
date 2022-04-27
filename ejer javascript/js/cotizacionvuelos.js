@@ -3,14 +3,15 @@
 let horaSalida = new Date(2022, 6, 5, 6, 10, 0);
 let horaLlegada = new Date(2022, 6, 5, 11, 10, 0);
 
-let horaSalida2 = new Date(2022, 6, 22, 6, 55, 0);
-let horaLlegada2 = new Date(2022, 6, 22, 11, 55, 0);
+let horaSalida2 = new Date(2022, 6, 22, 8, 55, 0);
+let horaLlegada2 = new Date(2022, 6, 22, 14, 55, 0);
 
 class Vuelos {
-    constructor (origen, destino, precio, horaSalida, horaLlegada) {
+    constructor (origen, destino, precio, direct, horaSalida, horaLlegada) {
         this.origen = origen ;
         this.destino = destino;
         this.precio = precio;
+        this.direct = direct;
         this.horaSalida = horaSalida;
         this.horaLlegada = horaLlegada;
     }
@@ -18,14 +19,14 @@ class Vuelos {
 
 let vuelo = [{
     "origen": "Bogota",
-    "destino": "San Andres",
+    "destino": "Medellín",
     "precio": 500000,
     "horaSalida": horaSalida.getHours() + ":" + horaSalida.getMinutes(),
     "horaLlegada": horaLlegada.getHours() + ":" + horaLlegada.getMinutes(),
 },
 {
     "origen": "Bogota",
-    "destino": "San Andres",
+    "destino": "Cartagena",
     "precio": 480000,
     "horaSalida": horaSalida2.getHours() + ":" + horaSalida2.getMinutes(),
     "horaLlegada": horaLlegada2.getHours() + ":" + horaLlegada2.getMinutes(),

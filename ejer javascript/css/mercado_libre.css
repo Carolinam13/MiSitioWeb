@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bt-menu {
+    display: block;
+    padding: 20px;
+    font-size: 30px;
+}
+.encabezado {
+    display: grid;
+    background-color: yellow;
+    border-bottom: 1px solid rgba(161, 156, 156, 0.692);
+    height: auto;
+    grid-template:     "busqueda    icon"/
+                        2fr         150px;
+}
+
+.icon1 {
+    grid-area: icon;
+    padding: 17px;
+    margin-right: 80%;
+    color: black;
+}
+
+.textbusqueda{
+    grid-area: busqueda; 
+}
+.menu {
+    border-radius: 10px;
+    border: none;
+    margin: 15px 15%;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    outline: none;
+}
+.contenVehiculo { 
+    display: grid;
+    grid-template: " img"
+                    "descripcion"/
+                     610px ;
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    width: 610px;
+   box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px
+}
+.imagen {
+    grid-area: img;
+    margin-top: 20px;
+    text-align: center;
+}
+.descripcion { 
+        display: inline-block;
+        grid-area: descripcion;
+        background-color: white;
+        width: 350px;
+        text-align: center;
+        margin-left: 30px;
+        font-size: 1.8em;
+}
+.precio {
+    display: inline-block;
+    text-align: center;
+    margin-left: 30px;
+}

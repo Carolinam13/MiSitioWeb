@@ -1,3 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 50px;
+}
+
 .viaje {
     border-top: 0px;
     border-left: 0px;
@@ -7,10 +17,7 @@
     outline: none;
     margin-left: 50px;
 }
-h2 {
-    text-align: center;
-    padding: 20px;
-}
+
 .contenedor {
     margin-left: 100px;
     display: inline-block;
@@ -35,13 +42,12 @@ h2 {
 
 .encabezado {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     grid-template:     "avion    ayuda    telefono   menuu" /
-                        1fr      200px    150px      150px;
+                        1fr       1fr      1fr      1fr;
 
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(182, 8, 8);
+    background-color: rgb(8, 69, 182);
     padding: 3px;
 }
 .fas{
@@ -73,15 +79,17 @@ font-size: 30px;
 
 .style-contentVuelo {
     display: grid;
-    grid-template: "styleOrigen      styleDirecto       styleDestino      stylePrecio"  25px
-                   "empty             styleDirecto       empty            stylePrecio " 25px/       
-                    1fr              1fr                 1fr              1fr; 
+    grid-template: "styleOrigen      styleDirecto       styleDestino     stylePrecio"  30px
+                   "horasalida       styleDirecto       horallegada      stylePrecio " /       
+                    1fr              1fr                 2fr              180px; 
     margin-bottom: 50px;
+    text-align: center;
     border: 1px solid rgba(110, 101, 101, 0.808);
     border-radius: 10px;
     padding: 30px;
     width: 80%;
     margin-left: 8%;
+    cursor: pointer;
 }
 
 .styleOrigen {
@@ -92,32 +100,28 @@ font-size: 30px;
 .styleDestino {
     grid-area: styleDestino;
     font-size: 1.8em;
-    margin-left: 40%;
-    margin-top: -10px;
 }
+
 .stylePrecio {
     grid-area: stylePrecio;
     font-size: 1.5em;
-    margin-top: 14px;
-    margin-left: 85%;
-    padding: 10px;
+    margin-left: 10%;
     border-left: 1px solid rgb(46, 41, 41);
 }
+
 .styleDirecto {
     grid-area: styleDirecto;
-    font-size: 1.8em;
+    font-size: 1.3em;
     justify-content: center;
-    margin-left: -10%;
+    margin-top: 10px;
 }
 .styleHoraSalida {
-    
-    font-size: 1.5em;
-    margin-top: 25px;
-    
+    grid-area: horasalida;
+    font-size: 1em;
+    margin-top: 6px;
 }
 .styleHoraLlegada {
-    
-    font-size: 1.5em;
-    /* margin-top: 25px;
-    margin-left: 45%; */
+    grid-area: horallegada;
+    font-size: 1em;
+    margin-top: 6px;
 }

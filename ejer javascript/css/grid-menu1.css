@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../img/montanas_0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+a {
+    font-size: 20.8px;
+    font-style: italic;
+}
+h1 {
+    font-style: italic;
+    color: rgba(40, 46, 46, 0.801);
+}
+.contenedor {
+    background-color: rgba(185, 182, 182, 0.705);
+    position: absolute;
+    margin-top: 10px;
+    width: 220px;
+    height:auto;
+    margin-left: 10px;
+}
+.main-content {
+    margin-left: 300px;
+    font-size: 50px;
+    margin-top: 0%;
+}
