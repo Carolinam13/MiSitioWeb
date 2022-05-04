@@ -13,7 +13,7 @@ let auto = new Automovil ("Porsche ", "911 GT3 ", "$150.000.000", "img/porscheme
 
 let fordMustang = new Automovil ("Ford Mustang ", "Clásico ", "$98.800.000", "img/ford mustangmercado.png");
 
-let chevrolet = new Automovil ("Chevrolet ", "Trailblazer ", "$178.000.000", "img/chevroletmercado.png");
+let chevrolet = new Automovil ("Chevrolet ", "Trailblazer ", "$178.000.000", "img/Chevroletmercado.png");
 
 function mostrarAuto() {
     let contentPrincipal = document.getElementById("mainContent");
