@@ -38,15 +38,14 @@
 }
 .contenVehiculo { 
     display: grid;
-    grid-template: " img"
-                    "descripcion"/
-                     610px ;
-    margin-left: auto ;
-    margin-right: auto;
+    grid-template: " img     descripcion " 30px
+                    "img     modelo" 30px
+                    "img     precio" 30px
+                    "img     empty auto"/
+                     6fr     8fr ;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 7px;
-    width: 610px;
    box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px
 }
 .imagen {
@@ -55,8 +54,8 @@
     text-align: center;
 }
 .descripcion { 
-        display: inline-block;
         grid-area: descripcion;
+        display: inline-block;
         background-color: white;
         width: 350px;
         text-align: center;
@@ -64,6 +63,7 @@
         font-size: 1.8em;
 }
 .precio {
+    grid-area: precio;
     display: inline-block;
     text-align: center;
     margin-left: 30px;
