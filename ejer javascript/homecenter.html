@@ -6,30 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homecenter</title>
     <link rel="stylesheet" href="css/homecenter.css">
+
     <link rel="stylesheet" href="icons/all.css">
-    <link rel="stylesheet" href="fonts/style.css">
+    <script src="https://kit.fontawesome.com/47910d8a72.js" crossorigin="anonymous"></script>
     
 </head>
-<body>
+ <body>
 
-    <div class="encabezado" >
-    <img  class="logo" src="img/logohomecenter1.png" alt="img">
-    <div class="buscador"><input class="buscar" type="text" placeholder="¿Qué estas buscando?"></div> 
-    <div class="iconos"><i class="icon-magnifying-glass"></i><i class="icon-menu"></i></div>  
-    </div>
+    <div id="contenido_principal_desplegado">
 
-    <div id="div1" class="transform1">
+        <div id="header-movil"class="contenedor-barra-busqueda-movil-out">
+    
+            <div class="barra-busqueda-movil">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="¿Qué estás buscando?" type="text">
+                <i id="boton-cerrar-header" class="fa-solid fa-xmark"></i>
+            </div>
+    
+        </div>
+    
+        <header id="header">
+            
+            <div class="img-logo">
+    
+              
+    
+                <img class="img-logo-web" src="img/logohomecenter1.png" alt="Imagen del logo">
+    
+    
+            </div>
+            <div class="contenedor-barra-busqueda">
+    
+                <i id="header-movil-open" class="fa-solid fa-magnifying-glass"></i>
+    
+                <div class="barra-busqueda">
+                    <input placeholder="¿Qué estás buscando?" type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+    
+            </div>
+            <div class="lista">
+                <ul>
+                
+                    <li>
+                         <div class="contador-carrito"></div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                       
+                    </li>
+                    <li>
+                        
+                        <i id="btn_open" class="fa-solid fa-bars menu-movil"></i>
+                       
+                    </li>
+                </ul>
+            </div>
+        </header>
+    
+        <img class="principal" src="img/homecenter" alt="">
+        <img class="movil" src="img/principal-homecenter-movil.png" alt="">
+    
+        <div id="chat-box" class="chat-box-out">
+            <div id="all-content" class="all-content-out">
+                <div class="header-box-in">
+                    <div>
+                        <i class="fa-solid fa-bars"></i>
+                        
+                    </div>
+                    <div class="img-avatar">
+                        <img src="img/homecenter-avatar-ana-in.png" alt="">
+                    </div>
+                    <div id="botonCerrar">
+                        <i class="fa-solid fa-xmark"></i>
+                        <p>Cerrar</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div id="chat-box-disable"></div>
+    </div> 
 
-    <div class="contenx">
-        <i class="fas fa bars"></i>
-        <img class="opera" src="img/operador2.png" alt="">
-       <label class="botonCerrar" id="botonCerrar">X <br>Cerrar</label> 
-    </div>
-        <div id="div2"></div>
-    </div>
+<div class="budy">
+<div id="div4" class="transform4">
 
-    <input  type="button" id="botonForm" value="Carolina" class="botonForm">
+   <div class="content2">
+       <i class="menu fas fa-bars"></i>
+        <img class="img1" src="img/operador2.png" alt=""> 
+        <i id="botonCerrar1" class="xbox fa-solid fa-x"></i>    
+</div>
 
+
+</div>
+</div>
+     <input class="boton" type="button" id="botonForm" value="Ana">
     <script src="js/homecenter.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
