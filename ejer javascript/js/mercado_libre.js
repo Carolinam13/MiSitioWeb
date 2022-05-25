@@ -123,7 +123,7 @@ let economico = new Automovil ("Chevrolet ", "Beat LS ", "$38.700.000", "img/che
 
 let economico2 = new Automovil ("Susuki ", "Celerio ", "$37.990.000", "img/celeriomercado.jpg");
 
-let economico3 = new Automovil ("Kia ", "Picanto Emotion 1.0L ", "$36.990.000", "img/kiamercado.jpg");
+let economico3 = new Automovil ("Kia ", "Picanto Emotion ", "$36.990.000", "img/kiamercado.jpg");
 
 function mostrarEconomico() {
     let contentPrincipal = document.getElementById("mainContent");
